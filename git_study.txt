@@ -153,8 +153,17 @@ GIT사용 테스트
 
 26) git push --set-upstream my_gitlab master
 
- - 24 번 작업으로, 로컬 저장소 이름은  master 입니다.
- - master 에서 git push 를 하면 upstream 의 원격 저장소 별칭으로 my_gitlab 으로 향하도록 합니다.
+ - 로컬 branch 인 master 를 원격 저장소 (my_gitlab) 으로 push 하는 과정입니다.
+ - 
 
- 
+
+27) git branch --delete 1-process_notes 
+
+28) git branch --delete 2-process_notes
+
+ - 로컬 브랜치를 삭제합니다.
+
+
+
+
  

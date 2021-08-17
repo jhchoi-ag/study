@@ -15,7 +15,7 @@ git commit -m "first commit"
 
 2) git remote add my_gitlab git@gitlab.com:jhchoi-ag/my-git-for-teams.git
 
- - 로컬 저장소에 임의의 이름 (my_gitlab) 으로 원격 연결 추가하는 중.
+ - 로컬 저장소에 임의의 이름 (my_gitlab) 으로 원격 저장소를 추가.
 
 
 3) git remote --verbose
@@ -25,9 +25,58 @@ git commit -m "first commit"
 
 4) git push --set-upstream my_gitlab 2-process_notes
 
- - 브랜치마다 upstream 원격 저장소를 연결해야 한다?
- - my_gitlab 이란 이름을 별명으로 갖는 원격 저장소를 push 할 수 있다고 표현하는 것이다.
- - push 할 upstream 설정은 my_gitlab 으로 한다.
- - 로컬 branch 인 2-process_notes 에서 push 를 한다면,(git push 만 하는거예요) my_gitlab 으로 하는거예요.
+ - 브랜치마다 upstream 원격 저장소를 연결해야 한다? (X)
+ - my_gitlab 이란 이름을 별명으로 갖는 원격 저장소를 push 할 수 있다고 표현하는 것이다. (X)
+ - push 할 upstream 설정은 my_gitlab 으로 한다. (X)
+ - 로컬 branch 인 2-process_notes 에서 push 를 한다면,(git push 만 하는거예요) my_gitlab 으로 하는거예요. (X)
+
+ - 로컬 branch 인 2-process_notes 를 my_gitlab 에 push 하는거예요. (X)
+   원격에 2-process_notes 라는 이름의 브랜치가 없다면, 생성하면서 말이죠. (X)
+
+   이제 후로는 my_gitlab 이라는 원격 저장소의 2-process_notes 라는 원격 브랜치를 사용할 께요 라는 것과 동일해요. 
+
+ - 원격 서버인 my_gitlab 의 원격 브랜치 명 2-process_notes 에 push 합니다.
+ - set-upstream 은 원격 서버의 이름이  기본값인 oring 이 아니기 때문인가요? (X)
+
+ - 현재 로컬 브랜치 값을 my_gitlab 의 2-process_notes 를 추적하면서 push 합니다.
+
+
+ 
+ 5) 흔히, origin/master 라는 표현은, 원격 저장(origin) 의 원격 branch (masater) 를 뜻 하는 것 같아요.
+
+ 6) git push origin serverfix
+
+  - git push <remote> <branch> 
+  - remote 저장소인 원격 저장소인 origin 에 원격 브랜치 이름 serverfix 으로 push 합니다. 
+
+ 7) git checkout --track origin/serverfix
+
+  - git 원격 저장소(origin) 의 원격 브랜치(serverfix) 로 변경합니다.
+  - track 옵션이 있어서, 로컬의 브랜치 이름도 serverfix 로 만듭니다.
+
+  - 이는, git checkout serverfix 로 축약하여 쓸수 있습니다.
+
+  - 원격 브랜치와 다른 이름을 사용하고 싶을 때는, git checkout -b sf origin/serverfix  하면..
+    원격지 브랜치 serverfix 를 가져오되, sf 란느 이름으로 로컬에 신규 브랜치를 만들면서 변환한다.
+
+
+ 8) git branch -u origin/serverfix
+
+  - 현재, 로컬에 존재하는 브랜치가 원격지(origin) 의 serverfix 를 추가적하고 싶을 때 사용.
+  - -u 는 --set-upstream-to 옵션과 동일한듯. 
+
+
+10) git pull
+
+ - git fetch 명령 수행.
+ - git merge 명령 수행.
+
+
+11) git push origin --delete serverfix
+
+ - origin 원격 저장소에 serverfix 브랜치를 삭제하였음을 push 합니다.
+
+
+ https://git-scm.com/book/ko/v2/Git-%EB%B8%8C%EB%9E%9C%EC%B9%98-Rebase-%ED%95%98%EA%B8%B0
 
  
