@@ -20,6 +20,8 @@ GIT사용 테스트
   remotes/orgin/sandbox
   remotes/origin/video-lessons
 
+  여기서, origin 은 원격 저장소의 기본 별명이다. 원격 저장소(origin) 에 3개의 브랜치가 있다는 뜻 이다.
+
 
 5) git branch --remots 
 
@@ -140,4 +142,12 @@ GIT사용 테스트
 
   - git show [fa04c30] 과 동일합니다.
 
-  
+
+24) git check master
+
+ - 로컬의 master 브랜치로 변경.
+
+25) git merge 2-process_notes
+
+ - 로컬 master <- 2-process_notes 를 병합 합니다.
+ 

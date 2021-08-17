@@ -1,0 +1,33 @@
+
+mkdir my-git-for-teams
+cd my-git-for-teams
+git init
+
+touch README.md
+git add README.md
+git commit -m "first commit"
+
+1) git remote add origin git@gitlab.com:jhchoi-ag/my-git-for-teams.git
+
+ - remote 를 추가한 점.
+ - origin 을 추가한 점.
+ - origin 은 신규 remote 저장소를 말한다. 여러개의 원격 저장소가 존재하는 경우를 대비하여, 별칭을 짓는 것이 좋다.
+
+2) git remote add my_gitlab git@gitlab.com:jhchoi-ag/my-git-for-teams.git
+
+ - 로컬 저장소에 임의의 이름 (my_gitlab) 으로 원격 연결 추가하는 중.
+
+
+3) git remote --verbose
+
+ - 현재 로컬 저장소와 연결된 원격 저장소 목록 보기.
+
+
+4) git push --set-upstream my_gitlab 2-process_notes
+
+ - 브랜치마다 upstream 원격 저장소를 연결해야 한다?
+ - my_gitlab 이란 이름을 별명으로 갖는 원격 저장소를 push 할 수 있다고 표현하는 것이다.
+ - push 할 upstream 설정은 my_gitlab 으로 한다.
+ - 로컬 branch 인 2-process_notes 에서 push 를 한다면,(git push 만 하는거예요) my_gitlab 으로 하는거예요.
+
+ 
