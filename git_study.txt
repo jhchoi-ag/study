@@ -99,3 +99,45 @@ GIT사용 테스트
 
  - 작업 폴더의 모든 수정 파일(신규 파일 포함) 을 staging 으로 전달한다. (처음 준비 영역에 들어간 모든 파일에 추가된다)
  - 이전에 staging 에 없던 파일도 들어가는구만요. 작업 폴더에 포함되었다는 이유로 말이죠.
+
+
+15) git add --patch filename
+
+ - 연관없는 수정사항을, 여러개의 작은 커밋으로 나누어 기록하기 위함.
+ - 특정. 파일 내의 라인별로 첨삭할 수 있어요.
+
+ 
+16) git reset HEAD git_study.txt
+
+ - 해당 파일을 staging (git add) 했으나, 아직 commit 준비가 되지 않아서, staing 을 취소하고 싶을 때 사용.
+
+
+17) git config --global core.excludesfile ~/.gitignore
+
+ - 무시할 파일 목록은 ~/.gitignore 파일에 만들어 둘꺼예요. 라는 뜻.
+
+
+18) git log --oneline
+19) git show [fa04c30]
+
+20) git tag import [fa04c30]
+
+ - tag 를 답니다. 여기서 tag 이름은 import 가 됩니다.
+
+21) git tag v1.0 [fa04c30]
+
+ - fa04c30 는 2개의 tag 를 갖게 됩니다.
+
+22) git tag
+
+ - tag 가 걸린 값을 전부 보여 줍니다.
+
+  예) % git tag
+      import
+      v1.0
+
+23) git show v1.0
+
+  - git show [fa04c30] 과 동일합니다.
+
+  
