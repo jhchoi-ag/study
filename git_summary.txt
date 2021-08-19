@@ -1,0 +1,93 @@
+
+1) git clone URL
+
+2) git init
+
+3) git status
+
+4) git add --all
+
+ - 모든 수정사항과 새로운 파일을 staging 합니다.
+
+5) git log / git long --oneline
+
+6) git branch --list 
+
+ - 로컬의 모든 브랜치 목록을 봅니다.
+
+7) git branch --all
+
+ - 로컬과 원격의 모든 브랜치를 봅니다.
+
+8) git branch --remotes
+
+ - 원격의 모든 브랜치 목록을 봅니다.
+
+9) git checkout --track remote_name/branch
+
+ - remote_name 저장소의 branch 를 로컬 사본으로 생성합니다.
+
+10) git checkout branch
+
+ - 현재 브랜치를 다른 로컬 브랜치로 바꿉니다. 현재 -> branch 로.
+
+11) git checkout -b branch branch_parent 
+
+ - 특정 브랜치로부터 새로운 브랜치를 만듭니다. branch_parent -> branch
+
+12) git add filename(s)
+
+ - 특정 파일만 staging 으로 옮깁니다.
+
+13) git add --patch filename 
+
+ - 파일의 일부분만 staging 으로 옮깁니다.
+
+14) git reset HEAD filename
+
+ - 특정 파일을 staging 에서 뺍니다.
+
+15) git commit --amend
+
+ - 현재 staing 을 이전 커밋에 적용해 업데이트 합니다.
+
+16) git show [commit]
+
+ - commit 한 값의 상세 내역을 보여줍니다.
+
+17) git tag
+
+ - tag 리스트를 보여줍니다.
+
+18) git show [tag]
+
+ - [tag] 에 적용된 상세 내역을 보여줍니다.
+
+19) git remote add remote_name URL
+
+ - 새로운 원격 저장소의 새 참조(remote_name, 보통 origin) 를 생성합니다.
+
+20) git push
+
+ - 현재 브랜치의 수정사항을 원격 저장소에 업로드 합니다.
+
+21) git remote --verbose 
+
+ - 사용 가능한 모든 원격 저장소의 fetch 와 push URL 목록을 봅니다.
+
+ 예) 
+ [jhchoi@5gpcf1:0:~/SRC_PCF] git remote --verbose
+   origin  git@192.168.10.111:/PCF/SRC_PCF.git (fetch)
+   origin  git@192.168.10.111:/PCF/SRC_PCF.git (push)
+
+22) git push --set-upstream remote_name branch_local branch_remote
+
+ - branch_local -> remote_name 의 branch_remote 로 push 적용합니다.
+
+23) git merge branch 
+
+ - 다른 branch 값을 현재 branch 에 통합합니다.
+
+24) git push --delete remote_name branch_remote
+
+ - 원격지의 branch_remote 를 삭제합니다. 
