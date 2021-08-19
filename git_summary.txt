@@ -71,6 +71,12 @@
 
  - 현재 브랜치의 수정사항을 원격 저장소에 업로드 합니다.
 
+ - git push origin masater
+  
+    이 뜻은, 원격지 저장소 (origin) 에 현재 로컬 브랜치(master) 를 올린다는 뜻 이며..
+    이렇게 되면 원격지에도 master 라는 저장소가 생기게 됩니다.
+    
+
 21) git remote --verbose 
 
  - 사용 가능한 모든 원격 저장소의 fetch 와 push URL 목록을 봅니다.
