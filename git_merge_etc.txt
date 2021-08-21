@@ -10,3 +10,12 @@
 
  - org_branch 로 돌아갑니다.
  
+3) git merge experiment_idea 
+
+ - experiment_idea 브랜치를 현재 브랜치로 merge 한다. (중심은 현재 브랜치)
+ - 이 때..아래와 같이 --squash 을 주면... experiment_idea 브랜치를 만드는 과정에서 여러번 commit 한 사항이 함께 merge 되지 않는다.
+
+ - git merge experiment_idea --squash 한 뒤에는, git commit 하여야 하며, 브랜치 병합 취소는 불가 하다.
+
+
+4) git branch --delete experimental_idea
