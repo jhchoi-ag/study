@@ -1,0 +1,12 @@
+
+1) git checkout -b experimental_idea [org_branch]
+
+ - org_branch 가 생략되면, 현재 브랜치에서 experimental_idea 라는 이름의 신규 브랜치를 만듭니다.
+ - 파일을 생서하고, commit 을 합니다.
+
+ - 만약 
+
+2) git checkout [org_branch] 
+
+ - org_branch 로 돌아갑니다.
+ 
