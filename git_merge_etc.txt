@@ -19,3 +19,14 @@
 
 
 4) git branch --delete experimental_idea
+
+
+
+# 단계적 rebasing (리베이싱)
+
+ - 개발을 위한 브랜치를 하나 만듭니다.
+ - master 브랜치에 2번의 commit 이 있을꺼예요.
+ - 그 뒤에 개발 브랜치에서 동일 파일에 대한 수정이 있었어요.. (master 와 개발간 충돌)
+ - 이 상황에서 rebasing 을 해 볼꺼예요.
+
+ 
