@@ -57,6 +57,7 @@ GIT사용 테스트
 8) git branch 1-process_notes
 
   - branch 를 local 에 하나 만듭니다.
+  - 하지만, 만들어진 곳으로 전환하지는 않습니다. (branch 생성, checkout 을 하던가 아니면 checkout -b 를 하던가)
 
  예시 :
 
@@ -107,12 +108,12 @@ GIT사용 테스트
 
  - 연관없는 수정사항을, 여러개의 작은 커밋으로 나누어 기록하기 위함.
  - 특정. 파일 내의 라인별로 첨삭할 수 있어요.
-
+ - 이거 좋아 보이는데요?
  
 16) git reset HEAD git_study.txt
 
  - 해당 파일을 staging (git add) 했으나, 아직 commit 준비가 되지 않아서, staing 을 취소하고 싶을 때 사용.
-
+ - 이것도 자주 사용하겠어요.
 
 17) git config --global core.excludesfile ~/.gitignore
 
@@ -162,8 +163,5 @@ GIT사용 테스트
 28) git branch --delete 2-process_notes
 
  - 로컬 브랜치를 삭제합니다.
-
-
-
 
  
